@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.6.1.js"></script>
+    <title>Exo jquery</title>
+</head>
+<body>
+
+   <h1 class="mt-2">Moyenne des élèves</h1>
+   <p id="error">Les champs ne doivent pas être vide et la moyenne doit être comprise entre 0 et 20</p>
+   <label for="firstName" class="mt-2">Prénom</label>
+   <br>
+    <input type="text" placeholder="prénom" id="firstName">
+    <br>
+    <label for="lastName" class="mt-2">Nom</label>
+    <br>
+    <input type="text" placeholder="nom" id="lastName">
+    
+    <br>
+    <label for="mean" class="mt-2">Moyenne</label>
+    <br>
+    <input type="number" placeholder="Entrer une moyenne entre 0 et 20" value="0" id="mean" >
+    
+    <br>
+
+    <button id="save" class="mt-2">Enregistrer</button>
+
+    <h2 class="mt-2">Moyenne de la classe</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <td>Prénom</td>
+                <td>Nom</td>
+                <td>Moyenne</td>
+                <td>X</td>
+            </tr>
+        </thead>
+
+
+        <tbody id="arrayBody">
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Moyenne de la classe</td>
+                <td id="classroomMean"></td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    
+    <!-- Afficher nom prénom, la moyenne des élèves dans une table, et la moyenne de la classe  -->
+    <!-- notes entre 0 et 20 si il dépasse 20 afficher un message d'erreur -->
+
+    <script src="js/main.js" defer></script>
+    
+</body>
+</html>

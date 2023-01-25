@@ -1,0 +1,50 @@
+.center{
+    text-align: center;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+.shape{
+    height: 100px;
+}
+
+.squares-container{
+    display: flex;
+
+}
+
+.square{
+    width: 100px;
+}
+
+.green-squares-container{
+    justify-content: space-around;
+}
+.green-square{
+    background-color: green;
+}
+
+.blue-squares-container{
+    justify-content: space-evenly;
+}
+.blue-square{
+    background-color: blue;
+    border: 1px solid black;
+}
+
+.orange-rectangle {
+    background-color: orange;
+}
+
+.yellow-rectangle-container{
+    display: flex;
+    justify-content: center;
+}
+.yellow-rectangle{
+    width: 80%;
+    background-color: yellow;
+}
+
